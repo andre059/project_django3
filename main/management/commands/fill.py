@@ -1,19 +1,19 @@
 from django.core.management import BaseCommand
 
-from main.models import Student
+from main.models import Product
 
 
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
-        students_list = [
-            {'first_name': 'Oleg', 'last_name': 'Maslov'},
-            {'first_name': 'Aleksey', 'last_name': 'Matyuk'},
-            {'first_name': 'Julia', 'last_name': 'Blohina'},
+        product_list = [
+            {'name': 'Дыня', 'category': 'Плодоовощные товары'},
+            {'name': 'Молоток', 'category': 'Ручной инструмент'},
+            {'name': 'Хлеб', 'category': 'Зерно-мучные товары'},
         ]
 
-        students_objects = []
-        for students_item in students_list:
-            students_objects.append(Student(**students_item))
+        product_objects = []
+        for product_item in product_list:
+            product_objects.append(Product(**product_item))
 
-        Student.objects.bulk_create(students_objects)
+        Product.objects.bulk_create(product_objects)
