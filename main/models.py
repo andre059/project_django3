@@ -35,12 +35,12 @@ class Product(models.Model):
                f'{self.purchase_price} {self.creation_date} {self.last_modified_date}'
 
     class Meta:
-        abstract = True,
         verbose_name = 'товар'
         verbose_name_plural = 'товары'
         ordering = ('category', 'name',)
 
 
-class Category(Product):
+class Category(models.Model):
     name = models.CharField(max_length=150, verbose_name='наименование')
     description = models.CharField(max_length=150, verbose_name='описание')
+
