@@ -22,7 +22,7 @@ NULLABLE = {'blank': True, 'null': True}
 class Product(models.Model):
     name = models.CharField(max_length=150, verbose_name='наименование')
     description = models.CharField(max_length=150, verbose_name='описание')
-    image = models.ImageField(upload_to='students/', verbose_name='изображение ', **NULLABLE)
+    image = models.ImageField(upload_to='preview/', verbose_name='изображение ', **NULLABLE)
     category = models.CharField(max_length=150, verbose_name='категория')
     purchase_price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='цена за покупку')
     creation_date = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
@@ -32,7 +32,7 @@ class Product(models.Model):
     def __str__(self):
 
         return f'{self.name} {self.description} {self.image} {self.category} ' \
-               f'{self.purchase_price} {self.creation_date} {self.last_modified_date}'
+               f'{self.purchase_price} {self.creation_date} {self.last_modified_date} {self.is_active}'
 
     class Meta:
         verbose_name = 'товар'
