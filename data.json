@@ -1,52 +1,72 @@
 [
-  {
-    "model": "main.student",
-    "pk": 2,
-    "fields": {
-      "first_name": "petr",
-      "last_name": "petrov",
-      "avatar": "",
-      "is_active": true
+    {
+        "model": "main.product",
+        "pk": 8,
+        "fields": {
+            "name": "╩рЁЄюЇхы№",
+            "description": "╤тхцшщ єЁюцрщ",
+            "image": "",
+            "category": "╧ыюфюютю∙э√х ЄютрЁ√",
+            "purchase_price": "70.00",
+            "creation_date": "2023-07-19T10:34:08.443Z",
+            "last_modified_date": "2023-07-19T10:34:08.443Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "main.product",
+        "pk": 9,
+        "fields": {
+            "name": "╧юьшфюЁ√",
+            "description": "╩Ёрёэ√щ, ёяхы√щ",
+            "image": "preview/scale_1200_MtLBNiA.webp",
+            "category": "╧ыюфюютю∙э√х ЄютрЁ√",
+            "purchase_price": "270.00",
+            "creation_date": "2023-07-19T10:35:12.465Z",
+            "last_modified_date": "2023-07-19T10:35:12.465Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "main.product",
+        "pk": 10,
+        "fields": {
+            "name": "╥юяюЁ",
+            "description": "╥юяюЁ схч ЄюяюЁш∙р",
+            "image": "",
+            "category": "╨єўэющ шэёЄЁєьхэЄ",
+            "purchase_price": "190.00",
+            "creation_date": "2023-07-19T10:36:04.735Z",
+            "last_modified_date": "2023-07-19T10:36:04.735Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "main.product",
+        "pk": 11,
+        "fields": {
+            "name": "┴рЄюэ",
+            "description": "эрЁхчэющ, ётхцшщ",
+            "image": "",
+            "category": "╟хЁэю-ьєўэ√х ЄютрЁ√",
+            "purchase_price": "45.00",
+            "creation_date": "2023-07-19T10:36:55.876Z",
+            "last_modified_date": "2023-07-19T10:36:55.876Z",
+            "is_active": true
+        }
+    },
+    {
+        "model": "main.product",
+        "pk": 12,
+        "fields": {
+            "name": "╧хы№ьхэш",
+            "description": "╚ч ётшэшэ√ ш ъєЁшЎ√",
+            "image": "",
+            "category": "яЁюфютюы№ёЄтхээ√х ЄютрЁ√",
+            "purchase_price": "456.00",
+            "creation_date": "2023-07-19T10:38:02.442Z",
+            "last_modified_date": "2023-07-19T10:38:02.442Z",
+            "is_active": false
+        }
     }
-  },
-  {
-    "model": "main.student",
-    "pk": 3,
-    "fields": {
-      "first_name": "igor",
-      "last_name": "vasin",
-      "avatar": "",
-      "is_active": true
-    }
-  },
-  {
-    "model": "main.student",
-    "pk": 4,
-    "fields": {
-      "first_name": "andrei",
-      "last_name": "konov",
-      "avatar": "",
-      "is_active": true
-    }
-  },
-  {
-    "model": "main.student",
-    "pk": 5,
-    "fields": {
-      "first_name": "arina",
-      "last_name": "zaikina",
-      "avatar": "",
-      "is_active": true
-    }
-  },
-  {
-    "model": "main.student",
-    "pk": 6,
-    "fields": {
-      "first_name": "Dmitriy",
-      "last_name": "Korotaev",
-      "avatar": "",
-      "is_active": true
-    }
-  }
 ]

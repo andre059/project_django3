@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand
 
-from main.models import Product
+from main.models import Product, Category
 
 
 class Command(BaseCommand):
@@ -17,3 +17,5 @@ class Command(BaseCommand):
             product_objects.append(Product(**product_item))
 
         Product.objects.bulk_create(product_objects)
+
+        Category.object.all().delete()
